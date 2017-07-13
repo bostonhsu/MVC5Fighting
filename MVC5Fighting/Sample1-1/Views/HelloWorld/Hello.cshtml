@@ -1,0 +1,11 @@
+﻿@{
+    ViewBag.Title = "Hello";
+}
+
+<h2>Hello</h2>
+
+<%using(Html.BeginForm("SendHello", "HelloWorld")) { %>
+Please input your name: <%=Html.TextBoxFor(x=>x.name)%>
+<input type="submit" value="Hello"/>
+<%}%>
+
