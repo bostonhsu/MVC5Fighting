@@ -1,0 +1,13 @@
+﻿@using Sample1_1_1.Models
+@model HelloPerson
+@{
+    ViewBag.Title = "Hello";
+}
+
+<h2>Hello</h2>
+
+@using (Html.BeginForm("SendHello", "HelloWorld"))
+{
+    <h3>Please input your name: </h3>@Html.TextBoxFor(m=>m.name)
+    <input type="submit" value="Hello"/>
+}
